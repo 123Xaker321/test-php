@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./Images/bgc.png);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#flex_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vw;
+}
+/* button */
+button {
+  text-decoration: none;
+  display: inline-block;
+  width: 50%;
+  height: 10%;
+  line-height: 10%;
+  border-radius: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(100vw / 50);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+button:hover {
+  background: #2ee59d;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+input {
+  width: 50%;
+  height: 40%;
+  border: 2px solid black;
+  border-radius: 45px;
+  margin-bottom: 10vh;
+  font-size: 36px;
+  padding-left: 2%;
+}
+input:valid {
+  border: 2px solid #2ee55c;
+}
+input:invalid {
+    border: 2px solid #e52e2e;
+  }
+#email_container,
+#password_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+label {
+  position: absolute;
+  top: -25%;
+  left: 25%;
+  font-family: "Montserrat", sans-serif;
+}
